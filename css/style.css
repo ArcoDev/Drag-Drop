@@ -7,7 +7,56 @@
 
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     min-height: 100vh;
+    font-size: 16px;
+}
+
+.drag-container {
+    border: 5px dashed #ddd;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.drag-container.active {
+    background: #b8d4fe;
+    color: #000;
+    border: 2px dashed #618ac9;
+}
+
+.drag-container p {
+    font-size: 2rem;
+    color: #618ac9;
+    font-weight: bold;
+}
+
+.drag-container span {
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.drag-container button {
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    outline: none;
+    background-color: #618ac9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.drag-container button:hover {
+    transform: scale(1.03);
 }
