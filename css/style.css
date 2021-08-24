@@ -15,7 +15,7 @@ body {
     font-size: 16px;
 }
 
-.drag-container {
+.drop-container {
     border: 5px dashed #ddd;
     height: 500px;
     width: 700px;
@@ -27,25 +27,25 @@ body {
     gap: 1rem;
 }
 
-.drag-container.active {
+.drop-container.active {
     background: #b8d4fe;
     color: #000;
     border: 2px dashed #618ac9;
 }
 
-.drag-container p {
+.drop-container p {
     font-size: 2rem;
     color: #618ac9;
     font-weight: bold;
 }
 
-.drag-container span {
+.drop-container span {
     font-size: 1.8rem;
     color: #000;
     font-weight: bold;
 }
 
-.drag-container button {
+.drop-container button {
     padding: 10px 20px;
     font-size: 1.3rem;
     outline: none;
@@ -54,9 +54,33 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: .3s ease-out;
+    transition: all .3s ease-out;
 }
 
-.drag-container button:hover {
+.drop-container button:hover {
     transform: scale(1.03);
+}
+
+.file-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+#preview {
+    margin-top: 1rem;
+}
+
+.status-text {
+    padding: 0 1rem;
+}
+
+.succes {
+    color: #52ad5a;
+}
+
+.danger {
+    color: #ff0000;
 }
